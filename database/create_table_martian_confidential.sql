@@ -1,0 +1,13 @@
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (1, 'Ray', 'Bradbury', 1, null, 155900, 'i9nYlFXowvV2');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (2, 'John', 'Black', 4, 10, 120100, 'YtuynU1rJoAx');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (3, 'Samuel', 'Minkston', 4, 2, 110000, 'YSbiYe2weN8G');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (4, 'Jeff', 'Spender', 1, 9, 10000, 'jTMwKrYqplMh');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (5, 'Sam', 'Parkhill', 2, 12, 125000, 'llEWoRpoeMde');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (6, 'Elma', 'Parkhill', 3, 8, 137000, '2y9o23YdbJPi');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (7, 'Melissa', 'Lewis', 1, 1, 145250, 'XpSwsuyVvySL');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (8, 'Mark', 'Watney', 3, null, 121100, 'QFGynjLeoeiu');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (9, 'Beth', 'Johanssen', 1, 1, 130000, 'aM68YeKoB8bM');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (10, 'Chris', 'Beck', 4, null, 125000, 'lZV9ltQvPDZn');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (11, 'Nathaniel', 'York', 4, 2, 105000, 'U5m5OgGKdRCa');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (12, 'Elon', 'Musk', 2, null, 155800, 'iXUwkL968j57');
+INSERT INTO martian_database.martian_confidential (martian_id, first_name, last_name, base_id, super_id, salary, dna_id) VALUES (13, 'John', 'Carter', null, 8, 129500, '54bAJFXC6FNA');

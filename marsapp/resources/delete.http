@@ -1,0 +1,5 @@
+DELETE http://localhost:{{port}}/{{uri-prefix}}/martian/2
+
+Accept: application/json
+
+###

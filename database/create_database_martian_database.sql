@@ -1,0 +1,1 @@
+CREATE DATABASE `martian_database` /*!40100 DEFAULT CHARACTER SET utf8mb4 */

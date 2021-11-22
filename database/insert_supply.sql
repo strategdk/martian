@@ -1,0 +1,10 @@
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (1, 'Solar Panel', 'Standard 1x1 meter cell', 912);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (2, 'Water Filter', 'This takes things out of your water so it''s dringkable.', 6);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (3, 'Duct Tape', 'A 10 meter roll of duct tape for ALL your repairs.', 951);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (4, 'Ketchup', 'It''s ketchup...', 206);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (5, 'Battery Cell', 'Standard 1000 kAh battery cell for power grid (heavy item).', 17);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (6, 'USB 6.0 Cable', 'Carbon fiber coated / 15 TBps spool', 42);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (7, 'Fuzzy Duster', 'It gets dusty around here. Be prepared!', 19);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (8, 'Mars Bars', 'The ORIGINAL nutrient bar made with the finest bioengineered ingredients.', 3001);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (9, 'Air Filter', 'Removes 99% of all Martian dust from your ventilation unit.', 23);
+INSERT INTO martian_database.supply (supply_id, name, description, quantity) VALUES (10, 'Famous Ray''s Frozen Pizza', 'This Martian favorite is covered in all your favorite toppings. 1 flavor only.', 823);
