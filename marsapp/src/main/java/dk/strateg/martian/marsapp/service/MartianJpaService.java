@@ -29,7 +29,7 @@ public class MartianJpaService {
         return martianRepository.count();
     }
 
-    public void deleteById(Long userId) {
+    public void deleteById(Integer userId) {
         martianRepository.deleteById(userId);
     }
 }

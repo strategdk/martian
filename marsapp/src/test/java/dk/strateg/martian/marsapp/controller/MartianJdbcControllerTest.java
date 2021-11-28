@@ -44,7 +44,7 @@ public class MartianJdbcControllerTest {
 
     @Test
     void findById() throws Exception {
-        Martian mockMartian = new Martian(1L, "Bob", "Red", 1, 1);
+        Martian mockMartian = new Martian(1, "Bob", "Red", 1, 1);
 
         Mockito.when(martianJdbcService.findById(Mockito.anyLong())).thenReturn(mockMartian);
 
@@ -53,7 +53,7 @@ public class MartianJdbcControllerTest {
 
         MvcResult result = mockMvc.perform(requestBuilder).andExpect(status().is2xxSuccessful()).andReturn();
 
-        var expectedBody = "{\"martianId\":1,\"firstName\":\"Bob\",\"lastName\":\"Red\",\"baseId\":1,\"superId\":1}";
+        var expectedBody = "{\"id\":1,\"firstName\":\"Bob\",\"lastName\":\"Red\",\"baseId\":1,\"superId\":1}";
         JSONAssert.assertEquals(expectedBody, result.getResponse().getContentAsString(), false);
     }
 }

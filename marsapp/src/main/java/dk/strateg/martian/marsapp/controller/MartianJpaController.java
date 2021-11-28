@@ -30,7 +30,7 @@ public class MartianJpaController {
 
     @DeleteMapping("/jpa/martian/{id}")
     public void delete(@PathVariable String id) {
-        Long userId = Long.parseLong(id);
+        Integer userId = Integer.parseInt(id);
         martianJpaService.deleteById(userId);
     }
 

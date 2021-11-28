@@ -1,86 +1,55 @@
 package dk.strateg.martian.marsapp.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import org.hibernate.Hibernate;
 
-import org.springframework.stereotype.Repository;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Objects;
 
-// https://zetcode.com/springboot/crudrepository/
-
+@Table(name = "martian")
 @Entity
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Martian {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long martianId;
-    String firstName;
-    String lastName;
-    Integer baseId;
-    Integer superId;
+    @Column(name = "martian_id", nullable = false)
+    private Integer id;
 
-    public Martian(Long martianId, String firstName, String lastName, Integer baseId, Integer superId) {
-        this.martianId = martianId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.baseId = baseId;
-        this.superId = superId;
-    }
+    @Column(name = "first_name", length = 32)
+    private String firstName;
 
-    public Martian() {
-    }
+    @Column(name = "last_name", length = 32)
+    private String lastName;
 
-    public Long getMartianId() {
-        return martianId;
-    }
+    @Column(name = "base_id")
+    private Integer baseId;
 
-    public void setMartianId(Long martianId) {
-        this.martianId = martianId;
-    }
+    @Column(name = "super_id")
+    private Integer superId;
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Integer getBaseId() {
-        return baseId;
-    }
-
-    public void setBaseId(Integer baseId) {
-        this.baseId = baseId;
-    }
-
-    public Integer getSuperId() {
-        return superId;
-    }
-
-    public void setSuperId(Integer superId) {
-        this.superId = superId;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        Martian martian = (Martian) o;
+        return id != null && Objects.equals(id, martian.id);
     }
 
     @Override
-    public String toString() {
-        return "\nMartian{" +
-                "martianId=" + martianId +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", baseId=" + baseId +
-                ", superId=" + superId +
-                '}';
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }
